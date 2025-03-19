@@ -29,7 +29,7 @@ public class CommandeController {
 
     @PostMapping()
     public ResponseEntity<?> createCommande(@RequestBody CommandeRequestModel commande) {
-       return null;
+       return ResponseEntity.ok(commandeService.createCommande(commande));
     }
 
     @DeleteMapping("/{id}")
