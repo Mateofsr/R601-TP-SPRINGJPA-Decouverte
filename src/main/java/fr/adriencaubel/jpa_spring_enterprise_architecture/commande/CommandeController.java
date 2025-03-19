@@ -24,7 +24,7 @@ public class CommandeController {
     
     @GetMapping
     public ResponseEntity<List<?>> getAllCommandes() {
-    	return null;
+    	return ResponseEntity.ok(commandeService.getAllCommandes());
     }
 
     @PostMapping()

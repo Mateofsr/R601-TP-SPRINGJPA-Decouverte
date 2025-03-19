@@ -26,8 +26,7 @@ public class CommandeService {
     }
 
     public List<Commande> getAllCommandes() {
-        
-    	return null;
+    	return commandeRepository.findAllWithClientAndArticles();
     }
     
     public Commande createCommande(CommandeRequestModel commandeRequestModel) {
